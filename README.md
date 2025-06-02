@@ -1,6 +1,6 @@
 ##Raspberry Pi setup
 
-This node runs Zeek which is used to monitor the mirrored traffic we obtain from our Victeim Vm through the use of a NIC that is connected to a NetGear switch that is mirroring the traffic to the Raspberry Pi
+This node runs Zeek which is used to monitor the mirrored traffic we obtain from our Victim Vm through the use of a NIC that is connected to a NetGear switch that is mirroring the traffic to the Raspberry Pi
 
 ### Services in Use 
 -Zeek 6.0.4
@@ -44,9 +44,9 @@ This node runs Zeek which is used to monitor the mirrored traffic we obtain from
 ### Filebeat Configuration File
 ![Filebeat Config](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/filebeat_config.png)
 ### Zeek Logs
-### Zeek conn.log Output
+### Zeek Conn log Output
 ![Connection Logs](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/conn_logs.png)
-### Zeek dns.log Output
+### Zeek DNS log Output
 ![DNS Logs](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/DNS_LOGS.png)
 ### Zeek SSH Log Output
 ![Zeek SSH Log Output](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/ssh.logs.png)
