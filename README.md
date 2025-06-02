@@ -36,3 +36,6 @@ Kibana
 ### Visuals 
 Logstash status
 ![Logstash status](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/logstash_status.png)
+
+Elasticsearch status
+![Zeek Status](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/elasticsearch_status.png)
