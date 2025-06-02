@@ -46,3 +46,12 @@ DNS Logs Visualization
 SSH Attempts
 ![SSH](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/ssh_chart.png)
 
+SSH Authentication Attemps
+![SSH](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/ssh_auth_percentage.png)
+
+HTTP requests
+![HTTP](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/http_uri.png)
+
+NXDomain Detection
+![HTTP](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/NXDOMAINDetetction.png)
+
