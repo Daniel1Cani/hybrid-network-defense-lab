@@ -49,5 +49,5 @@ This node runs Zeek which is used to monitor the mirrored traffic we obtain from
 ### Zeek dns.log Output
 ![DNS Logs](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/DNS_LOGS.png)
 ### Zeek SSH Log Output
-![Zeek SSH Log Output](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/ssh_logs.png)
+![Zeek SSH Log Output](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/ssh.logs.png)
 
