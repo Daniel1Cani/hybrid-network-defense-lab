@@ -34,4 +34,4 @@ Kibana
               +-------------------+
 
 ### Visuals 
-
+![Logstash status](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/logstash_status.png)
