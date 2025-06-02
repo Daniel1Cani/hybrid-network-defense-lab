@@ -6,8 +6,6 @@ This node runs Zeek which is used to monitor the mirrored traffic we obtain from
 -Zeek 6.0.4
 -Filebeat OSS.7.10.2
 
-
-
                ┌────────────┐
                │  Internet  │
                └────┬───────┘
@@ -15,26 +13,24 @@ This node runs Zeek which is used to monitor the mirrored traffic we obtain from
               ┌─────▼──────┐
               │ Netgear SW │
               └────┬───────┘
-           Mirror  │
-           Port    │
-          ▼        ▼
-┌────────────────┐ ┌────────────────┐
-│  Raspberry Pi  │ │   Victim VM    │
-│  (Zeek, FB)     │ │ (target logs)  │
-└──────┬──────────┘ └────────────────┘
+         Mirror    │
+         Port      │
+        ▼          ▼
+┌──────────────┐ ┌──────────────┐
+│ Raspberry Pi │ │  Victim VM   │
+│ (Zeek, FB)   │ │ (Logs Gen.)  │
+└──────┬───────┘ └──────────────┘
        │
        ▼
-┌────────────────────────────┐
-│     Ubuntu VM (SOC)        │
-│ ┌────────────────────────┐ │
-│ │  Logstash + Kibana     │ │
-│ └────────────────────────┘ │
-│ ┌────────────────────────┐ │
-│ │     Elasticsearch      │ │
-│ └────────────────────────┘ │
-└────────────────────────────┘
-
-
+┌──────────────────────┐
+│   Ubuntu VM (SOC)    │
+│ ┌──────────────────┐ │
+│ │ Logstash + Kibana│ │
+│ └──────────────────┘ │
+│ ┌──────────────────┐ │
+│ │  Elasticsearch   │ │
+│ └──────────────────┘ │
+└──────────────────────┘
 
 ### Run Commands
 
