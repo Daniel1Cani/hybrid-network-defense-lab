@@ -5,7 +5,7 @@ This node runs Zeek which is used to monitor the mirrored traffic we obtain from
 ### Services in Use 
 -Zeek 6.0.4
 -Filebeat OSS.7.10.2
-                    ┌────────────┐
+                    ```┌────────────┐
                     │  Internet  │
                     └────┬───────┘
                          │
@@ -24,7 +24,7 @@ This node runs Zeek which is used to monitor the mirrored traffic we obtain from
  │   Ubuntu VM (SOC)  │
  │ Logstash + Kibana  │
  │  Elasticsearch      │
- └────────────────────┘
+ └────────────────────┘```
 
 
 ### Run Commands
