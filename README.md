@@ -35,14 +35,14 @@ Kibana
 
 ### Visuals 
 Logstash status
-[](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/logstash_status.png)
+![Logstash_status](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/logstash_status.png)
 
 Elasticsearch status
-[](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/elasticsearch_status.png)
+![Elasticsearch_status](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/elasticsearch_status.png)
 
 DNS Logs Visualization
-[](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/DNS_requests.png)
+![DNS](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/DNS_requests.png)
 
 SSH Attempts
-[](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/ssh_chart.png)
+![SSH](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/ssh_chart.png)
 
