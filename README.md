@@ -42,7 +42,9 @@ This node runs Zeek which is used to monitor the mirrored traffic we obtain from
 
 ### Filebeat Running
 ![Filebeat Status](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/Filebeat_status.png)
+
 ###Filebeat Configuration File
+
 ![Filebeat Config](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/filebeat_config.png)
 
 
