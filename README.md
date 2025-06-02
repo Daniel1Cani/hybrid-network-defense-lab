@@ -53,5 +53,5 @@ HTTP requests
 ![HTTP](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/http_uri.png)
 
 NXDomain Detection
-![HTTP](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/NXDOMAINDetetction.png)
+![DOMAIN](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/NXDOMAINDetetction.png)
 
