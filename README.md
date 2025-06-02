@@ -33,3 +33,5 @@ Kibana
               |      Kibana       |
               +-------------------+
 
+### Visuals 
+
