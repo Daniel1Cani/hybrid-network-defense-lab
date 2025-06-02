@@ -6,6 +6,8 @@ This node runs Zeek which is used to monitor the mirrored traffic we obtain from
 -Zeek 6.0.4
 -Filebeat OSS.7.10.2
 
+```
+
                ┌────────────┐
                │  Internet  │
                └────┬───────┘
@@ -31,6 +33,7 @@ This node runs Zeek which is used to monitor the mirrored traffic we obtain from
 │ │  Elasticsearch   │ │
 │ └──────────────────┘ │
 └──────────────────────┘
+```
 
 ### Run Commands
 
