@@ -1,14 +1,5 @@
 ### Ubuntu VM (SOC) Setup'
 
-### Contents
-- [Services in Use](#services-in-use)
-- [Architecture](#architecture)
-- [Logstash Configuration](#logstash-pipeline-configuration)
-- [Run Commands](#run-commands)
-- [Visual Dashboards](#visual-dashboards-screenshots)
-- [Notes](#notes)
-
-
 This nodes serves as the SOC, aggregating and analyzing log data that is coming from the Raspberry Pi monitoring node. It gets the zeek logs via Filebeat and then uses Logstash on the SOC VM to parse, transform and route data into Elasticsearch which is then visualized with Kibana
 
 ### Services in use
