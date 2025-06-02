@@ -39,3 +39,6 @@ Logstash status
 
 Elasticsearch status
 ![Zeek Status](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/elasticsearch_status.png)
+
+DNS Logs Visualization
+![Zeek Status](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/DNS_requests/png)
