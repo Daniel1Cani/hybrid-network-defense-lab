@@ -21,8 +21,10 @@ SSH Brute Force using Hydra
 DNS Tunneling 
 -Use Kali to connect to tunnel 
 ![DNS_KALI](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/kali_dns_tunnel.png)
+
 -Use Vic VM to create Tunnel and establish connection
 ![DNS_VM](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/sudo_iodine.png)
+
 -Send file across the tunnel
 ![DNS_VM](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/scptest.png)
 
