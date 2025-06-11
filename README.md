@@ -24,7 +24,7 @@ DNS Tunneling
 -Use Vic VM to create Tunnel and establish connection
 ![DNS_VM](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/sudo_iodine.png)
 -Send file across the tunnel
-![DNS_VM](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/scp test.png)
+![DNS_VM](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/scptest.png)
 
 
 
