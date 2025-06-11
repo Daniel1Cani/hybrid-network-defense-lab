@@ -12,8 +12,10 @@ The attack panel simulates common attacker behavior including:
 
 These scenarios help validate that your **defensive tools** are logging and alerting correctly, and allow you to **test incident response workflows**.
 
----
 
-## 
+## Visuals
+
+SSH Brute Force using Hydra
+![Hydra](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/logstash_status.png)
 
 
