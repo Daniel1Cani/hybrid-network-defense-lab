@@ -37,4 +37,15 @@ These scenarios help validate that your **defensive tools** are logging and aler
 
 ![DNS_KALI](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/file_madeit.png)
 
+## 📡 Network Scanning & Enumeration (Nmap)
+
+**Objective:** Simulate attacker reconnaissance by scanning the victim system for open ports and services.
+
+This attack mimics common recon behavior seen in real-world intrusions, helping validate detection and alerting capabilities of Zeek and Kibana
+
+
+
+
+
+
 
