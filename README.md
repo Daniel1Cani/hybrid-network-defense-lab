@@ -14,6 +14,6 @@ These scenarios help validate that your **defensive tools** are logging and aler
 
 ---
 
-## 📁 Folder Structure
+## 
 
 
