@@ -15,10 +15,10 @@ These scenarios help validate that your **defensive tools** are logging and aler
 
 ## Visuals
 
-SSH Brute Force using Hydra
+## SSH Brute Force using Hydra
 ![Hydra](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/hydra.png)
 
-DNS Tunneling 
+ ### DNS Tunneling 
 -Use Kali to connect to tunnel 
 ![DNS_KALI](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/kali_dns_tunnel.png)
 
