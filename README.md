@@ -17,5 +17,14 @@ These scenarios help validate that your **defensive tools** are logging and aler
 
 SSH Brute Force using Hydra
 ![Hydra](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/hydra.png)
-p
+
+DNS Tunneling 
+-Use Kali to connect to tunnel 
+![DNS_KALI](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/kali_dns_tunnel.png)
+-Use Vic VM to create Tunnel and establish connection
+![DNS_VM](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/sudo_iodine.png)
+-Send file across the tunnel
+![DNS_VM](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/scp test.png)
+
+
 
