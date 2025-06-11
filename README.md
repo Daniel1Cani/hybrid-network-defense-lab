@@ -16,6 +16,6 @@ These scenarios help validate that your **defensive tools** are logging and aler
 ## Visuals
 
 SSH Brute Force using Hydra
-![Hydra](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/logstash_status.png)
+![Hydra](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/hydra.png)
 
 
