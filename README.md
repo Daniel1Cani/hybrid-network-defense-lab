@@ -28,5 +28,7 @@ DNS Tunneling
 -Send file across the tunnel
 ![DNS_VM](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/scptest.png)
 
+-File made it across to the Kali VM 
+![DNS_KALI](https://raw.githubusercontent.com/Daniel1Cani/hybrid-network-defense-lab/screenshots/file_madeit.png)
 
 
