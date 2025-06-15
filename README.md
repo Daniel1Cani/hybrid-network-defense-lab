@@ -14,6 +14,7 @@ The lab is split between a **Raspberry Pi monitoring node** and a **Ubuntu VM-ba
 | 🍓 Raspberry Pi   | Runs Zeek + Filebeat to monitor mirrored traffic from the switch    |
 | 🧪 Victim VM      | Generates attack/test traffic                                        |
 | 🔄 Netgear Switch | Mirrors traffic to the Pi for packet inspection                     |
+| Kali VM | Used as a attacker                   |
 
 ---
 
