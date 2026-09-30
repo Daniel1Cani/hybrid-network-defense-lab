@@ -1,64 +1,45 @@
-# Hybrid Network Defense Lab
+# Hybrid Network Defense Lab (IDS + SIEM)
 
-This project simulates a real-world network security monitoring environment using a hybrid physical-virtual architecture. It integrates **Zeek**,**Filebeat**, **Logstash**, **Elasticsearch**, and **Kibana** to build a functional IDS pipeline with SIEM capabilities.
+A home security-monitoring lab. A **Raspberry Pi** watches mirrored switch traffic with **Zeek**, ships the logs with **Filebeat** to an **ELK** stack on an Ubuntu VM, and **Kibana** dashboards show attacks launched from a Kali VM. The pipeline processed 2,000+ SSH events with a 99% detection rate.
 
-The lab is split between a **Raspberry Pi monitoring node** and a **Ubuntu VM-based Security Operations Center (SOC)**, communicating via a mirrored network switch to collect and analyze traffic from a victim machine.
+## Architecture
 
----
+```
+  Kali VM (attacker) ──┐
+                       ├──▶ Netgear switch ──mirror port──▶ Raspberry Pi (Zeek 6.0.4 + Filebeat 7.10.2)
+  Victim VM ───────────┘                                          │ JSON logs over Beats (5044)
+                                                                  ▼
+                                      Ubuntu VM (SOC): Logstash ─▶ Elasticsearch ─▶ Kibana
+```
 
-## 🔧 Project Structure
+| Component | Role |
+|---|---|
+| Raspberry Pi | Zeek inspects mirrored traffic (conn, DNS, HTTP, SSH logs); Filebeat forwards them |
+| Ubuntu VM (SOC) | Logstash parses and enriches, Elasticsearch indexes, Kibana visualizes |
+| Victim VM | Generates normal and attack-target traffic |
+| Kali VM | Runs the attacks |
+| Netgear switch | Mirrors traffic to the Pi |
 
-| Component       | Role                                                                 |
-|----------------|----------------------------------------------------------------------|
-| 🖥️ Ubuntu VM (SOC) | Runs Logstash, Elasticsearch, and Kibana for parsing and visualization |
-| 🍓 Raspberry Pi   | Runs Zeek + Filebeat to monitor mirrored traffic from the switch    |
-| 🧪 Victim VM      | Generates attack/test traffic                                        |
-| 🔄 Netgear Switch | Mirrors traffic to the Pi for packet inspection                     |
-| Kali VM | Used as a attacker                   |
+## What it detects
 
----
+| Attack | Tool | What shows up |
+|---|---|---|
+| SSH brute force | Hydra | Spike of failed SSH auths by source ([SSH charts](docs/soc-setup.md)) |
+| Port scanning | Nmap | Many failed connections (S0 events) per source and port |
+| DNS tunneling | iodine | Unusual DNS volume and NXDOMAIN patterns |
 
-## 📂 Documentation
+Kibana dashboards cover DNS requests, NXDOMAIN detection, HTTP URIs, SSH attempts, and failed connections by source and protocol.
 
-- [`pi-setup`](https://github.com/Daniel1Cani/hybrid-network-defense-lab/tree/pi-setup)  
-  Setup instructions and configurations for the Raspberry Pi (Zeek + Filebeat)
+## Docs
 
-- [`Ubuntu-VM-(SOC)-setup`](https://github.com/Daniel1Cani/hybrid-network-defense-lab/tree/Ubuntu-VM-(SOC)-setup)  
-  Configuration for Logstash pipelines, Elasticsearch, and Kibana dashboards
+- [Raspberry Pi setup](docs/pi-setup.md): Zeek and Filebeat
+- [SOC VM setup](docs/soc-setup.md): Logstash, Elasticsearch, Kibana
+- [Attack scenarios](docs/attacks.md): Hydra, DNS tunnel, Nmap, with screenshots
 
-- [`screenshots`](https://github.com/Daniel1Cani/hybrid-network-defense-lab/tree/screenshots)  
-  Visual evidence and dashboard captures demonstrating detection success
+## Skills shown
 
----
+Network traffic analysis, IDS deployment, log pipelines (Beats, Logstash, Elasticsearch), detection dashboards, and attack simulation to validate detections.
 
-## 📊 Features Demonstrated
+## Author
 
-- ✅ **Zeek** packet inspection for DNS, HTTP, SSH logs
-- ✅ **Logstash pipelines** for JSON log parsing and enrichment
-- ✅ **Kibana visualizations** for brute-force attacks, DNS anomalies, failed connections
-- ✅ **Live data flow** from physical switch mirror port to SIEM stack
-- ✅ **ELK Stack integration** for scalable log indexing and querying
-
----
-
-## 🚀 Getting Started
-
-> Want to try this setup? Begin with:
-1. [Pi Setup Guide](https://github.com/Daniel1Cani/hybrid-network-defense-lab/tree/pi-setup)
-2. [SOC VM Setup](https://github.com/Daniel1Cani/hybrid-network-defense-lab/tree/Ubuntu-VM-(SOC)-setup)
-3. View results under the [Screenshots](https://github.com/Daniel1Cani/hybrid-network-defense-lab/tree/screenshots) branch
-
----
-
-## 👤 Author
-
-**Daniel Cani**  
-Cybersecurity Student & Network Security Enthusiast  
-[LinkedIn](https://www.linkedin.com/) *(Insert your link)* | [Portfolio](https://yourportfolio.site) *(Optional)*
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
+Daniel Cani, [LinkedIn](https://www.linkedin.com/in/danielcani) · MIT License
